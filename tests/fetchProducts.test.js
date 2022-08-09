@@ -11,13 +11,14 @@ describe('1 - Teste a função fetchProducts', () => {
     expect(fetch).toHaveBeenCalled();
   });
   it('Ao passar computador como argumento da função, testa se a função fetch ultiliza o enpoint correto', () => {
+    fetchProducts('computador');
     expect(fetch).toHaveBeenCalledWith('https://api.mercadolibre.com/sites/MLB/search?q=computador');
   });
-  it('Teste se o retorno da função fetchProducts com o argumento computador é uma estrutura de dados igual ao objeto computadorSearch', () => {
-    fetchProducts('computador');
-    expect(fetchProducts('computador')).toMatch(computadorSearch);
+  it('Testa se o retorno da função fetchProducts com o argumento computador é uma estrutura de dados igual ao objeto computadorSearch', async () => {
+    const data = await fetchProducts('computador');
+    expect(data).toMatchObject(computadorSearch);
   });
-  it('Teste se, ao chamar a função fetchProducts sem argumento, retorna um erro com a mensagem: You must provide an url', () => {
-    expect(fetchProducts()).toThrow(new Error('mensagem esperada aqui'));
+  it('Testa se, ao chamar a função fetchProducts sem argumento, retorna um erro com a mensagem: You must provide an url', () => {
+    expect(fetchProducts()).rejects.toThrow(new Error('You must provide an url'));
   })
 });
