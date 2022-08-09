@@ -10,7 +10,7 @@ describe('1 - Teste a função fetchProducts', () => {
     fetchProducts('computador');
     expect(fetch).toHaveBeenCalled();
   });
-  it('Ao passar computador como argumento da função, testa se a função fetch ultiliza o enpoint correto', () => {
+  it('Ao passar computador como argumento da função, testa se a função fetch ultiliza o endpoint correto', () => {
     fetchProducts('computador');
     expect(fetch).toHaveBeenCalledWith('https://api.mercadolibre.com/sites/MLB/search?q=computador');
   });
