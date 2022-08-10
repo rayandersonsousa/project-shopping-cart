@@ -63,4 +63,4 @@ sectionItems.addEventListener('click', (produ) => {
   addProducsToCart(sku);
 });
 
-window.onload = () => { addProducsToPage(); putInCart(); };
+window.onload = () => { addProducsToPage(); };
