@@ -30,7 +30,8 @@ const createProductItemElement = ({ sku, name, image }) => {
 const getSkuFromProductItem = (item) => item.querySelector('span.item__sku').innerText;
 
 const cartItemClickListener = (event) => {
-  // coloque seu código aqui
+  const itemInCart = event.target;
+  sectionCart.removeChild(itemInCart);
 };
 
 const createCartItemElement = ({ sku, name, salePrice }) => {
@@ -57,9 +58,7 @@ const addProducsToCart = async (producId) => {
   sectionCart.appendChild(cartItem);
 };
 
-const products = document.querySelector('.items');
-
-products.addEventListener('click', (produ) => {
+sectionItems.addEventListener('click', (produ) => {
   const sku = getSkuFromProductItem(produ.target.parentNode);
   addProducsToCart(sku);
 });
