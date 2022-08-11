@@ -1,5 +1,6 @@
 const sectionItems = document.querySelector('.items');
 const sectionCart = document.querySelector('.cart__items');
+const btnEmptyCart = document.querySelector('.empty-cart');
 
 const createProductImageElement = (imageSource) => {
   const img = document.createElement('img');
@@ -74,6 +75,11 @@ const getLocalStorageInfo = () => {
     }
   }
 };
+
+btnEmptyCart.addEventListener('click', () => {
+  sectionCart.innerHTML = '';
+  saveCartItems(sectionCart.innerHTML);
+});
 
 window.onload = async () => { 
   await addProducsToPage();
