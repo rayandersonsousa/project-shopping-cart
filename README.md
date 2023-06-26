@@ -15,7 +15,7 @@ Nesta aplicação é possível:
 
 ## Rodando o projeto
 
-1. Cole o repositório
+1. Clone o repositório
    - Use o comando: `git clone git@github.com:rayandersonsousa/project-shopping-cart.git`
    - Entre na pasta do projeto: `cd project-shopping-cart`
 2. Instale as dependências do projeto
