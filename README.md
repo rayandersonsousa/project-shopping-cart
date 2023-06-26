@@ -20,7 +20,7 @@ Nesta aplicação é possível:
    - Entre na pasta do projeto: `cd project-shopping-cart`
 2. Instale as dependências do projeto
    - `npm install`
-3- Rode o programa no seu navegador
+3. Rode o programa no seu navegador
   - `npm start`
 
 ## Tecnologias aplicadas
