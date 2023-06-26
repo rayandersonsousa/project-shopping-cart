@@ -7,11 +7,11 @@ Projeto desenvolvido durante o módulo de Front-end do curso de desenvolvimento 
 Neste projeto desenvolvi uma página de compras utilizando JavaScript vanila, HTML e CSS.
 
 Nesta aplicação é possível:
-- Adicionar produtos ao carrinho de compras.
-- Guardar no local storage o conteúdo do carrinho.
-- Cacular o valor total das compras.
-- Remover itens do carrinho.
-- Limpar o carrinho removendo todos os produtos de uma vez só.
+   - Adicionar produtos ao carrinho de compras.
+   - Guardar no local storage o conteúdo do carrinho.
+   - Cacular o valor total das compras.
+   - Remover itens do carrinho.
+   - Limpar o carrinho removendo todos os produtos de uma vez só.
 
 ## Rodando o projeto
 
@@ -21,7 +21,7 @@ Nesta aplicação é possível:
 2. Instale as dependências do projeto
    - `npm install`
 3. Rode o programa no seu navegador
-  - `npm start`
+   - `npm start`
 
 ## Tecnologias aplicadas
 
